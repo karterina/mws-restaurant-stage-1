@@ -137,6 +137,9 @@ nav h1 a {
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
@@ -282,6 +285,9 @@ nav h1 a {
 }
 
 
-@media screen (min-width 400px) and (max-width {
+@media screen and (max-width 750px) {
+	nav {
+		height: 50px;
+		background-color: green;}
 
 }
