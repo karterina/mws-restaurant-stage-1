@@ -26,7 +26,7 @@ let urls = [
 
 // installing the service worker
 self.addEventListener("install", e => {
-  e.waitUntil(caches.open(myCache).then(cache => cache.addAll(urls)));
+  e.waitUntil(caches.open(myCache).then(cache => cache.addAll(urls)).then(self.skipWaiting()));
 });
 
 // activating

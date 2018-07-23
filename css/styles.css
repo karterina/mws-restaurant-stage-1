@@ -21,10 +21,12 @@ a {
 	color: orange;
 	text-decoration: none;
 }
-a:hover, a:focus {
-	color: #3397db;
+a:hover, a:focus, select:focus {
+	color: red;
 	text-decoration: none;
 }
+
+
 a img{
 	border: none 0px #fff;
 }
@@ -199,7 +201,6 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -218,11 +219,7 @@ nav h1 a {
   height: 100%;
   width: 100%;
 }
-.inside #footer {
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-}
+
 
 #restaurant-name {
   color: #f18200;
@@ -236,10 +233,13 @@ nav h1 a {
 }
 #restaurant-img {
 	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 #restaurant-address {
-  font-size: 12pt;
+  font-size: 16pt;
   margin: 10px 0px;
+	font-weight: bold;
 }
 #restaurant-cuisine {
   background-color: #333;
@@ -288,26 +288,23 @@ nav h1 a {
 }
 #reviews-list li p {
   margin: 0 0 10px;
+	font-size: 14pt;
 }
 #restaurant-hours td {
+	font-size: 14pt;
   color: #666;
 }
 
 
-@media screen and (min-width: 950px) {
-	.inside #map-container {
-		background: blue none repeat scroll 0 0;
-	  height: 85%;
-	  position: fixed;
-	  right: 0;
-	  top: 80px;
-	  width: 50%;
-	}
+@media screen and (min-width: 700px) {
 	#restaurant-container, #reviews-container {
-	  width: 50%;
-		float: left;
+	  width: 70%;
+		margin: auto;
 	}
-	#breadcrumb {
-		width: calc(50% - 80px);
+	.restaurant-img {
+		max-width: 600px;
+	}
+	#restaurant-cuisine {
+		max-width: 600px;
 	}
 }
