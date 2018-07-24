@@ -164,7 +164,7 @@ createRestaurantHTML = (restaurant) => {
   image.alt = `a photo of ${restaurant.name} restaurant`;
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h3');
   name.innerHTML = restaurant.name;
   li.append(name);
 
