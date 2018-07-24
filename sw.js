@@ -24,14 +24,10 @@ let urls = [
   "./img/10.jpg",
 ]
 
-// installing the service worker
+// installing 
 self.addEventListener("install", e => {
-  e.waitUntil(caches.open(myCache).then(cache => cache.addAll(urls)).then(self.skipWaiting()));
-});
-
-// activating
-self.addEventListener("activate", e => {
-  e.waitUntil(self.clients.claim());
+   e.waitUntil(caches.open(myCache)
+   .then(cache => cache.addAll(urls)));
 });
 
 // returning visited pages when offline
