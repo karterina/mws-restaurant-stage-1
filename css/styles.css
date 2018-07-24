@@ -79,7 +79,7 @@ nav h1 a {
     font-size: 17px;
     margin: 0;
     width: 100%;
-		height: 20px;
+		box-sizing: border-box;
 }
 
 /* Display list items side by side */
@@ -257,8 +257,9 @@ nav h1 a {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 40px 40px 30px;
-  width: 90%;
+  width: 100%;
 	margin: auto;
+	box-sizing: border-box;
 }
 #reviews-container {
   padding: 30px 40px 80px;
